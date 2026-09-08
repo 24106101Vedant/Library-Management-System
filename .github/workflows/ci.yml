@@ -1,0 +1,33 @@
+name: Library Management System CI
+
+on:
+  push:
+    branches:
+      - main
+      - feature-book-return
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Check Project Files
+        run: |
+          echo "Checking Library Management System files..."
+          test -f index.html
+          test -f style.css
+          test -f script.js
+          test -f README.md
+          echo "All required files are present."
+
+      - name: Validate HTML
+        run: |
+          grep -q "<html" index.html
+          grep -q "</html>" index.html
+          echo "HTML validation successful."
+
+      - name: Display Success Message
+        run: echo "Library Management System CI completed successfully."
