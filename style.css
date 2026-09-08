@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f4f4f4;
+}
+
+header {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+.library {
+    width: 80%;
+    margin: 30px auto;
+}
+
+.book {
+    background: white;
+    margin: 15px 0;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+button {
+    padding: 10px 15px;
+    cursor: pointer;
+}

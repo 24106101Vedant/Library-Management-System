@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Library Management System</h1>
+        <p>Manage books easily and efficiently</p>
+    </header>
+
+    <main>
+        <section class="library">
+            <h2>Available Books</h2>
+
+            <div id="bookList">
+                <div class="book">
+                    <h3>Clean Code</h3>
+                    <p>Author: Robert C. Martin</p>
+                    <button onclick="issueBook(this)">Issue Book</button>
+                </div>
+
+                <div class="book">
+                    <h3>Java Programming</h3>
+                    <p>Author: Herbert Schildt</p>
+                    <button onclick="issueBook(this)">Issue Book</button>
+                </div>
+
+                <div class="book">
+                    <h3>Python Basics</h3>
+                    <p>Author: Mark Lutz</p>
+                    <button onclick="issueBook(this)">Issue Book</button>
+                    <button onclick="returnBook(this)">Return Book</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
